@@ -1,0 +1,29 @@
+Using the database function
+You have many functions to use in the module
+
+#### The data that been stored is in a json file
+
+db.save(filename)
+
+  - filename is the name of the file that the user wanted to build in the server(In my computer).
+  - This function just make a json file for you and it will generate a token for accessing the json file
+
+db.show(filename)
+  - This function will output the data in that specifc json file
+
+db.copy(targetfile, serverfile)
+  - This function will copy the data in the target file in the user computer to the server computer in this case it's my computer
+
+
+db.delete(filename)
+  - This function will delete the specifc file in the server 
+
+db.update(filename, data, token)
+  - This function is to update data to the specifc json file and you must have a token to execute and access the json file
+
+db.deletekey(filename, columnname, token)
+
+  - This function will delete the column in the json file
+
+db.stores(path, data)
+  - This function is to store dictionary data or map data(In other language) to the specific json file(User computer).
